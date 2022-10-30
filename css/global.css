@@ -1,0 +1,11 @@
+.backarrow {
+  position: fixed;
+  bottom: 0;
+  z-index: 11;
+  padding: 15px;
+  background-color: #333;
+}
+
+.backarrow i {
+  color: #fff;
+}

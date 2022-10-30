@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+/* font-family: 'Source Code Pro', monospace; */
+
+/* Basic Styles */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Source Code Pro", monospace;
+  background: #000;
+  color: #fff;
+  line-height: 1.6;
+  background: url(../Images/bg.png);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+}
+
+/* Navigation */
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  color: #fff;
+  width: 100%;
+  height: 10vh;
+  padding: 0 30px;
+  position: fixed;
+  top: 0;
+}
+
+.nav-header {
+  display: inline-block;
+}
+
+.nav-h1 {
+  display: inline-block;
+  overflow: hidden;
+  
+  animation: TypingAnimation 2s steps(30, end),
+    BlinkAnimation 0.75s step-end infinite;
+  white-space: nowrap;
+  font-size: 30px;
+  font-weight: 700;
+  border-right: 3px solid green;
+}
+
+@keyframes TypingAnimation {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes BlinkAnimation {
+  from,
+  to {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: green;
+  }
+}
+
+.navigation ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.navigation li {
+  margin: 1px 5px;
+  font-size: 20px;
+  background: green;
+  padding: 10px;; 
+}
+
+.navigation a:hover {
+  color: rgb(100, 91, 91);
+}
+
+/* main */
+
+.main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-div {
+  width: 80%;
+  background-color: #222;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 25px;
+  
+}
+
+.main-h1 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.main-div h1 {
+  font-size: 2rem;
+}
+
+.main-div a {
+  font-size: 20px;
+  color: green;
+}
+
+
+
+/* header */
+
+.header {
+  height: 100vh;
+  background: url(../Images/headergif.gif) no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.header-text {
+  width: 50%;
+  padding: 50px;
+  color: rgba(51, 255, 51, 0.4);
+  text-shadow: 0 0 1px rgb(51 255 51 / 40%), 0 0 2px hsl(0deg 0% 100% / 80%);
+}
+
+.header-text h1 {
+  font-size: 4rem;
+}
+
+.header-text p {
+  font-size: 1.5rem;
+}
+
+.header-animation {
+  width: 50%; 
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+}
+
+.square {
+   margin: 5px;
+   color: rgba(51, 255, 51, 0.4);
+   text-shadow: 0 0 1px rgb(51 255 51 / 40%), 0 0 2px hsl(0deg 0% 100% / 80%);
+}
+
+/* colabs */
+
+.colab {
+  width: 100%;
+  height: 50vh;
+}
+
+.colab-divs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+}
+
+.colab-div {
+  background: url();
+}
+
+#colab-img {
+  background: url(../Images/header.png) no-repeat center center/cover;
+}
+
+/* Main 2 */
+
+#main-2 {
+  margin-top: 5px;
+}
+
+/* Footer */
+
+.footer {
+  width: 100%;
+  height: 35vh;
+  background: #111;
+  text-align: center;
+  padding: 20px;
+}
+
+footer ul {
+  margin: 30px 0;
+}
+
+footer ul a {
+  margin: 10px;
+}
+
+footer ul a:hover {
+  color: rgb(43, 202, 43);
+}
+
+/* About Me */
+.about-me {
+  margin: 50px 0;
+  height: 70vh;
+  width: 100%;
+  background: #222;
+  display: flex;
+  flex-direction: row;
+}
+
+.about-left {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-right {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: url('../Images/code.jpg');
+  background-size: cover;
+}
+
+.about-write {
+  margin: 50px;
+}
+
+
+
+/* .bars {
+  margin-left: 30px;
+  margin-right: 30px;
+  width: 60px;
+  
+  background: #fff;
+}
+
+.bar1 {
+  height: 80%;
+}
+
+.bar2 {
+  height: 80%; 
+}
+
+.about-div {
+  
+  height: 100%;
+} */
